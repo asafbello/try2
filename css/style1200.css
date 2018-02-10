@@ -1,0 +1,590 @@
+  /*----------  Fonts  ----------*/
+
+  @font-face {
+    font-family: 'opensanshebrew-bold';
+    src: url('../fonts/opensanshebrew-bold-webfont.ttf'); 
+    font-weight: 900;  
+}
+
+  @font-face {
+    font-family: 'opensanshebrew-regular';
+    src: url('../fonts/opensanshebrew-regular-webfont.ttf'); 
+}
+
+  /*----------  Fonts  ----------*/
+
+.my-top-header {
+    text-align: center;
+    background: #094fa3;
+    color: white;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: opensanshebrew-regular;
+}
+
+.header {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 0;
+    font-family: opensanshebrew-regular;
+}
+
+.top-nav-link {
+    text-decoration: none;
+    color: black !important;
+    border-right: 1px solid black
+}
+
+.no-right-border {
+    border: none;
+}
+
+.logo {
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.social-icons {
+    display: flex;
+    width: 115px;
+    justify-content: space-between;
+}
+
+.social-icons > * {
+    cursor: pointer;
+}
+
+.welcome-img {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    top:-40px;
+    background: url(/img/welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+.welcome-img-heading {
+    font-family: opensanshebrew-bold;
+}
+
+.welcome-img-sub-heading {
+    font-family: opensanshebrew-regular;
+}
+
+.welcome-img-content {
+    width: 40%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.welcome-img-content > .btn-primary {
+    margin-top: 10%;
+    border-radius: 10px;
+    background: #094fa3;
+    font-family: opensanshebrew-regular;
+}
+
+.online-orders {
+    width: 100%;
+    height: 440px;
+    position: relative;
+    top:-40px;
+    background: url(/img/wood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 0;
+    font-family: opensanshebrew-regular;    
+}
+
+.online-btn-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.online-orders-btn {
+    align-self: center;
+    color: white;
+    background: #094fa3;
+    border-radius: 15px;
+    position: relative;
+    left: 20px;
+}
+
+
+.online-orders-heading {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    height: 25px;
+}
+
+.online-orders-img-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.track-img {
+    width: 220px;
+    height: 160px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    padding: 0;
+}
+
+.pc-img {
+    width: 225px;
+    height: 190px;
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+
+.delevry-process-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+    width: 120px;
+    align-items: flex-start;
+    
+}
+
+.delevry-process-icons > img {
+    max-width: 120px;
+    max-height: 120px;
+    
+}
+
+.arrow-left {
+    width: 30px;
+    height: 20px;
+    align-self: center;
+}
+
+.delivery-icons-and-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delivery-icons-and-btn > .btn-primary {
+    margin-top: 10%;
+    border-radius: 10px;
+    background: #094fa3;
+}
+
+.delivery-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+
+.discounts-heading {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    height: 25px;
+    font-family: opensanshebrew-regular;
+    
+}
+
+.discount-image {
+    height: 270px;
+    width: 300px;
+}
+#image1 {
+    background-image: url("../img/xtreme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 270px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+#image2 {
+    background-image: url("../img/clenhouse.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:-80px -50px;
+    max-height: 270px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+#image3 {
+    background-image: url("../img/xtreme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 270px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+
+
+.bottom-text {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   background: #094fa3;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.discount-text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bottom-text > * {
+    margin: 5px;
+}
+
+.discount-text > p, b {
+    font-family: opensanshebrew-regular;
+    margin: 0;
+}
+
+
+.blur-img {
+    width: 100%;
+    min-height: 260px;
+    position: relative;
+    margin: 0;
+    /* margin-top: 100px;  */
+    background: url(/img/blur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content-on-blur-img {
+    height: 260px;
+}
+
+.mobile-app-hand-img {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+}
+
+.mobile-app-links-heading {
+    font-family: opensanshebrew-bold;
+}
+
+.mobile-app-links-sub-heading {
+    font-family: opensanshebrew-regular;
+}
+
+.text-on-blur {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+    /* width: 100%; */
+}
+
+.app-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.app-link {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.text-and-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-wrapper > img {
+    width: 460px;
+    height: 200px;
+    background: url(/img/meat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.lorem {
+    position: relative;
+}
+
+.round-arrow {
+    cursor: pointer;
+}
+
+.cart-img {
+    position: absolute;
+    left: -310px; 
+}
+
+.flower-img {
+    width: 180px;
+    height: 120px;
+    position: absolute;
+    bottom: 5px;
+    right: 245px;
+}
+
+.tall-card {
+    width: 460px;
+    height: 275px;
+    position: relative;
+    margin-bottom: 2%;
+    
+}
+
+.bottom-content {
+   color: white;
+   position: absolute;
+   bottom: -2px;
+   left: 2px;
+   width: 460px;
+   background: #094fa3;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 460px;
+}
+
+.bottom-content > * {
+    margin: 5px;
+}
+
+.short-card {
+    width: 460px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row
+}
+
+.card-right-content img {
+    width: 285px;
+    height: 200px;
+}
+
+.card-left-content {
+    height: 200px;
+    width: 175px;
+    background: #094fa3;
+    position: absolute;
+    left: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.bowl-icon {
+    align-self: flex-end;
+}
+
+.bottom-card-arrow {
+    align-self: flex-start !important;
+}
+
+.divisions-heading {
+    font-family: opensanshebrew-regular;    
+}
+
+.left-division {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.left-items {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.right-division {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+
+
+.online-services {
+    width: 100%;
+    min-height: 150px;
+    position: relative;
+    margin-top: 5%; 
+    background: url(/img/darkwood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    padding: 10px;
+    margin-right: 50px; 
+    font-family: opensanshebrew-regular;
+}
+
+.service-text-left {
+    margin: 0;
+    /* position: relative;
+    left: 100px; */
+}
+
+.buy-online-btn {
+    background: white;
+    color: #094fa3;
+    width: 160px;
+    border-radius: 10px;
+}
+
+.newsletter-input {
+    border-radius: 15px;
+    text-align: right;
+    padding: 4px;
+    width: 270px;
+    position: relative;
+}
+
+.btn-inside-input {
+    background: #094fa3;
+    color: white;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-header {
+    justify-content: space-around;    
+}
+
+.bottom-nav {
+    margin-right: 35px;
+}
+
+.bottom-container {
+    position: relative;
+    right: 40px;
+}
+
+.modal-container {
+    margin-bottom: 5%;
+}
+
+#modal {
+    margin-top: 1%;
+    margin-right: 0 !important; 
+}
+
+.modal-img {
+    z-index: -1;
+    background: url(/img//modal-pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px ;
+    overflow: hidden;
+    margin: 0;
+    height: 850px;
+}
+
+.branches-wrapper {
+    background: url(/img/pepperbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20px;
+}
+
+.branches {
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    position: relative;
+    top: 36%;
+}
+
+.branches > .branch-icon {
+    margin: 15px 0 15px 0px;
+    cursor: pointer; 
+}
+
+/* .pepper-img {
+    z-index: 1;
+    position: absolute;
+    bottom: 63%;
+} */
+
